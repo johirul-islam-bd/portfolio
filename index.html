@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Johirul Islam — Business Planning</title>
+<meta name="description" content="Johirul Islam, Manager of Business Planning at Epyllion Group. 12+ years in garment and textile ERP, dashboards, and strategic planning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1c1c19;
+    --paper:#f2efe4;
+    --paper-deep:#e9e4d4;
+    --indigo:#22395c;
+    --indigo-deep:#152840;
+    --brass:#a97a24;
+    --thread:#47645a;
+    --rule:#d3ccb8;
+    --max:960px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans", sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+
+  a{color:var(--indigo);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--brass); outline-offset:3px;}
+
+  h1,h2,h3{
+    font-family:"Newsreader", serif;
+    font-weight:500;
+    margin:0;
+    color:var(--indigo-deep, var(--indigo));
+    letter-spacing:-0.01em;
+  }
+
+  .wrap{max-width:var(--max); margin:0 auto; padding:0 28px;}
+
+  /* ---------- Top ledger nav ---------- */
+  .topnav{
+    position:sticky; top:0; z-index:20;
+    background:rgba(242,239,228,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--rule);
+  }
+  .topnav .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    height:56px;
+  }
+  .topnav .mark{
+    font-family:"Newsreader", serif; font-style:italic; font-size:1.05rem;
+    color:var(--indigo);
+  }
+  .topnav nav{display:flex; gap:22px;}
+  .topnav nav a{
+    font-size:0.88rem; text-decoration:none; color:var(--ink);
+    padding:4px 2px; border-bottom:1px solid transparent;
+  }
+  .topnav nav a:hover{border-bottom-color:var(--brass); color:var(--indigo);}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    padding:76px 0 40px;
+    border-bottom:1px solid var(--rule);
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:34px;
+    align-items:start;
+  }
+  .badge{
+    width:88px; height:104px;
+    border:1.5px solid var(--indigo);
+    display:flex; align-items:center; justify-content:center;
+    font-family:"Newsreader", serif; font-size:2rem; color:var(--indigo);
+    position:relative;
+    flex-shrink:0;
+  }
+  .badge::before, .badge::after{
+    content:""; position:absolute; width:9px; height:9px; border:1.5px solid var(--brass);
+  }
+  .badge::before{ top:-5px; left:-5px; border-right:none; border-bottom:none;}
+  .badge::after{ bottom:-5px; right:-5px; border-left:none; border-top:none;}
+
+  .hero h1{font-size:clamp(2.1rem, 4.6vw, 3rem); line-height:1.08;}
+  .hero .role{
+    margin-top:8px; font-size:1.05rem; color:var(--thread); font-family:"IBM Plex Sans";
+    font-weight:500;
+  }
+  .hero .summary{max-width:62ch; margin-top:18px; color:#3a3a35;}
+
+  .contact-line{
+    margin-top:20px; display:flex; flex-wrap:wrap; gap:16px 26px;
+    font-family:"IBM Plex Mono", monospace; font-size:0.82rem; color:var(--indigo);
+  }
+  .contact-line a{text-decoration:none;}
+  .contact-line a:hover{text-decoration:underline;}
+
+  /* measuring-tape stat strip */
+  .stats{
+    margin-top:34px;
+    display:grid; grid-template-columns:repeat(3,1fr);
+    border-top:1px solid var(--indigo); border-bottom:1px solid var(--indigo);
+  }
+  .stats div{
+    padding:16px 18px;
+    border-left:1px solid var(--rule);
+  }
+  .stats div:first-child{border-left:none;}
+  .stat-num{
+    font-family:"Newsreader", serif; font-size:1.9rem; color:var(--brass); line-height:1;
+  }
+  .stat-label{font-size:0.82rem; color:var(--thread); margin-top:6px;}
+
+  /* ---------- Sections ---------- */
+  section{padding:52px 0; border-bottom:1px solid var(--rule);}
+  section:last-of-type{border-bottom:none;}
+  .section-head{
+    display:flex; align-items:baseline; gap:14px; margin-bottom:28px;
+  }
+  .section-head .num{
+    font-family:"IBM Plex Mono"; font-size:0.8rem; color:var(--brass);
+  }
+  .section-head h2{font-size:1.5rem; font-style:italic;}
+
+  /* Objective callout */
+  .objective{
+    font-family:"Newsreader", serif; font-style:italic; font-size:1.25rem;
+    color:var(--indigo); max-width:60ch; line-height:1.5;
+    border-left:2px solid var(--brass); padding-left:20px;
+  }
+
+  /* Proficiencies */
+  .prof-grid{
+    display:grid; grid-template-columns:repeat(2, 1fr); gap:0;
+    border-top:1px solid var(--rule);
+  }
+  .prof-grid div{
+    padding:11px 4px; border-bottom:1px solid var(--rule);
+    font-size:0.95rem; display:flex; justify-content:space-between; gap:10px;
+  }
+  .prof-grid div span.i{
+    font-family:"IBM Plex Mono"; font-size:0.78rem; color:var(--thread); align-self:center;
+  }
+
+  /* Experience timeline */
+  .timeline{border-top:1px solid var(--rule);}
+  .role-row{
+    display:grid; grid-template-columns:1fr auto; gap:8px 20px;
+    padding:16px 0; border-bottom:1px solid var(--rule);
+  }
+  .role-row .title{font-weight:600; font-size:1.02rem;}
+  .role-row .org{color:var(--thread); font-size:0.92rem;}
+  .role-row .dates{
+    font-family:"IBM Plex Mono"; font-size:0.8rem; color:var(--indigo);
+    white-space:nowrap; align-self:start; padding-top:2px;
+  }
+  .role-row.current .title{color:var(--indigo);}
+  .role-row.current .dates{color:var(--brass);}
+
+  .duties{margin:26px 0 0; padding:0; list-style:none;}
+  .duties li{
+    position:relative; padding-left:20px; margin-bottom:10px; font-size:0.96rem;
+  }
+  .duties li::before{
+    content:"—"; position:absolute; left:0; color:var(--brass);
+  }
+
+  /* Achievements dashboard */
+  .kpi-grid{
+    display:grid; grid-template-columns:repeat(3, 1fr); gap:1px;
+    background:var(--rule);
+    border:1px solid var(--rule);
+  }
+  .kpi{
+    background:var(--paper); padding:22px 18px; position:relative;
+  }
+  .kpi .val{
+    font-family:"Newsreader", serif; font-size:2rem; color:var(--indigo); line-height:1;
+  }
+  .kpi .desc{margin-top:8px; font-size:0.86rem; color:#4a4a44;}
+
+  /* Awards */
+  .awards{list-style:none; margin:0; padding:0;}
+  .awards li{
+    padding:14px 0; border-bottom:1px solid var(--rule);
+    display:grid; grid-template-columns:1fr auto; gap:10px;
+  }
+  .awards li .aname{font-weight:500;}
+  .awards li .ayear{font-family:"IBM Plex Mono"; font-size:0.8rem; color:var(--brass);}
+  .awards li .anote{display:block; font-size:0.85rem; color:var(--thread); margin-top:3px;}
+
+  /* Training */
+  .training-grid{
+    display:grid; grid-template-columns:repeat(auto-fit, minmax(200px,1fr)); gap:22px;
+  }
+  .training-grid .card{border-top:2px solid var(--indigo); padding-top:12px;}
+  .training-grid .card h3{font-size:1.02rem; font-family:"IBM Plex Sans"; font-weight:600; color:var(--ink); font-style:normal;}
+  .training-grid .card p{margin:6px 0 0; font-size:0.88rem; color:#4a4a44;}
+
+  .cert-tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:24px;}
+  .cert-tags span{
+    font-size:0.8rem; padding:5px 10px; border:1px solid var(--rule); color:var(--thread);
+    font-family:"IBM Plex Mono";
+  }
+
+  /* Education / misc */
+  .edu-item{margin-bottom:16px;}
+  .edu-item .deg{font-weight:600;}
+  .edu-item .yr{color:var(--thread); font-size:0.88rem;}
+
+  .two-col{display:grid; grid-template-columns:1fr 1fr; gap:40px;}
+
+  /* Footer / contact */
+  footer{padding:52px 0 60px;}
+  footer h2{font-size:1.7rem; font-style:italic; margin-bottom:14px;}
+  .footer-links{display:flex; flex-wrap:wrap; gap:24px; margin-top:20px;}
+  .footer-links a{
+    text-decoration:none; font-size:0.95rem; color:var(--indigo);
+    border-bottom:1px solid var(--brass); padding-bottom:2px;
+  }
+  .fine{margin-top:44px; font-size:0.78rem; color:#8a8578; font-family:"IBM Plex Mono";}
+
+  @media (max-width: 720px){
+    .hero-grid{grid-template-columns:1fr;}
+    .badge{display:none;}
+    .stats{grid-template-columns:1fr; }
+    .stats div{border-left:none; border-top:1px solid var(--rule);}
+    .stats div:first-child{border-top:none;}
+    .prof-grid{grid-template-columns:1fr;}
+    .kpi-grid{grid-template-columns:1fr;}
+    .two-col{grid-template-columns:1fr;}
+    .topnav nav{display:none;}
+    .role-row{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <div class="wrap">
+    <span class="mark">Johirul Islam</span>
+    <nav>
+      <a href="#summary">Summary</a>
+      <a href="#experience">Experience</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#awards">Awards</a>
+      <a href="#training">Training</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero wrap">
+  <div class="hero-grid">
+    <div class="badge">JI</div>
+    <div>
+      <h1>Johirul Islam</h1>
+      <p class="role">Manager, Business Planning — Epyllion Group</p>
+      <p class="summary">Twelve years inside the garment and textile industry, spent turning ERP rollouts, dashboards, and KPI frameworks into growth teams can act on. I lead the planning function that connects marketing, merchandising, finance, and the shop floor.</p>
+      <div class="contact-line">
+        <a href="mailto:2johirul@gmail.com">2johirul@gmail.com</a>
+        <a href="tel:+8801911105806">(+88) 01911105806</a>
+        <a href="https://linkedin.com/in/johirul-islam-bd/" target="_blank" rel="noopener">linkedin.com/in/johirul-islam-bd</a>
+        <span>Dhaka, Bangladesh</span>
+      </div>
+      <div class="stats">
+        <div><div class="stat-num">12+</div><div class="stat-label">Years in business planning</div></div>
+        <div><div class="stat-num">30+</div><div class="stat-label">Team members led</div></div>
+        <div><div class="stat-num">$2M</div><div class="stat-label">Annual contribution margin gained</div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="summary">
+    <div class="section-head"><span class="num">01</span><h2>Summary</h2></div>
+    <p class="objective">To work as a strategic leader in business planning, driving growth and efficiency through innovation.</p>
+    <p style="max-width:70ch; margin-top:22px;">I deploy ERP systems and build data-driven dashboards that give decision-makers a clear read on the business. Day to day, that means analyzing complex data, setting KPIs, and staying close enough to stakeholders to keep strategy tied to what the market actually wants — while training the next group of planners to do the same.</p>
+
+    <div class="prof-grid" style="margin-top:32px;">
+      <div><span>Strategic leadership</span><span class="i">01</span></div>
+      <div><span>Training &amp; development</span><span class="i">02</span></div>
+      <div><span>Data analysis &amp; visualization</span><span class="i">03</span></div>
+      <div><span>Stakeholder engagement</span><span class="i">04</span></div>
+      <div><span>ERP implementation &amp; management</span><span class="i">05</span></div>
+      <div><span>Continuous improvement</span><span class="i">06</span></div>
+      <div><span>Financial management</span><span class="i">07</span></div>
+      <div><span>Project &amp; cost management</span><span class="i">08</span></div>
+      <div><span>Performance metrics development</span><span class="i">09</span></div>
+      <div><span>Digital transformation</span><span class="i">10</span></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-head"><span class="num">02</span><h2>Experience</h2></div>
+
+    <div class="timeline">
+      <div class="role-row current">
+        <div><div class="title">Manager, Business Planning</div><div class="org">Epyllion Group</div></div>
+        <div class="dates">Oct 2024 — present</div>
+      </div>
+      <div class="role-row">
+        <div><div class="title">Deputy Manager, Business Planning</div><div class="org">Epyllion Group</div></div>
+        <div class="dates">Jul 2021 — Oct 2024</div>
+      </div>
+      <div class="role-row">
+        <div><div class="title">Assistant Manager, Business Planning</div><div class="org">Epyllion Group</div></div>
+        <div class="dates">Aug 2018 — Jul 2021</div>
+      </div>
+      <div class="role-row">
+        <div><div class="title">Senior Executive, Business Planning</div><div class="org">Epyllion Group</div></div>
+        <div class="dates">Nov 2016 — Jul 2018</div>
+      </div>
+      <div class="role-row">
+        <div><div class="title">Executive, Business Planning</div><div class="org">Epyllion Group</div></div>
+        <div class="dates">Nov 2014 — Oct 2016</div>
+      </div>
+      <div class="role-row">
+        <div><div class="title">Assistant Executive, Business Planning</div><div class="org">Epyllion Group</div></div>
+        <div class="dates">Nov 2012 — Oct 2014</div>
+      </div>
+      <div class="role-row">
+        <div><div class="title">Management Trainee, Business Planning</div><div class="org">Epyllion Group</div></div>
+        <div class="dates">May 2012 — Oct 2012</div>
+      </div>
+    </div>
+
+    <ul class="duties">
+      <li>Lead a team of over 30 professionals, promoting collaboration and continuous improvement.</li>
+      <li>Oversee the implementation of business strategies to enhance growth and efficiency.</li>
+      <li>Develop dashboards for marketing, merchandising, and fabric sourcing to support decision-making.</li>
+      <li>Manage the deployment of ERP systems across garments, textiles, washing, and accessories.</li>
+      <li>Execute strategies to optimize finance and accounts processes for better cost management.</li>
+      <li>Train team members in MS Excel, presentations, costing, business models, and ERP systems.</li>
+      <li>Foster synergy among departments to achieve strategic objectives.</li>
+      <li>Conduct analyses using data visualization techniques to address operational challenges.</li>
+      <li>Establish KPIs and metrics to ensure alignment with organizational goals.</li>
+      <li>Engage with stakeholders for insights to align strategies with market demands.</li>
+    </ul>
+
+    <div style="margin-top:40px; padding-top:24px; border-top:1px dashed var(--rule);">
+      <div class="role-row" style="border-bottom:none; padding-bottom:0;">
+        <div><div class="title">Faculty Secretary, EECS</div><div class="org">North South University</div></div>
+        <div class="dates">Oct 2011 — Apr 2012</div>
+      </div>
+      <ul class="duties" style="margin-top:14px;">
+        <li>Streamlined administrative procedures, reducing processing time for requests and correspondence.</li>
+        <li>Organized departmental events, enhancing student engagement and faculty visibility.</li>
+        <li>Implemented an electronic filing system for efficient document retrieval.</li>
+        <li>Served as the main contact for faculty, students, and stakeholders, improving communication.</li>
+        <li>Provided administrative support to faculty for research and course materials, enhancing workflow.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="section-head"><span class="num">03</span><h2>Achievements</h2></div>
+    <div class="kpi-grid">
+      <div class="kpi"><div class="val">9% / 5%</div><div class="desc">Turnover growth achieved in 2017–18 and 2018–19 through effective planning.</div></div>
+      <div class="kpi"><div class="val">35% → 90%+</div><div class="desc">On-time throughput (OTT) improvement in marketing &amp; merchandising.</div></div>
+      <div class="kpi"><div class="val">$2M</div><div class="desc">Contribution margin gained annually through proactive management.</div></div>
+      <div class="kpi"><div class="val">1.3%</div><div class="desc">Reduction in raw material costs through effective cost management.</div></div>
+      <div class="kpi"><div class="val">30% → 70%</div><div class="desc">Growth in digital traceability, enhancing process efficiency.</div></div>
+      <div class="kpi"><div class="val">30%</div><div class="desc">Increase in supply chain efficiency through strategic initiatives.</div></div>
+      <div class="kpi"><div class="val">70%</div><div class="desc">Increase in commercial efficiency via improved ERP invoicing processes.</div></div>
+      <div class="kpi"><div class="val">10%</div><div class="desc">Gain in garment production efficiency through targeted process improvements.</div></div>
+      <div class="kpi"><div class="val">Root cause</div><div class="desc">Impactful data visualization enabling faster root-cause analysis and decisions.</div></div>
+    </div>
+  </section>
+
+  <section id="awards">
+    <div class="section-head"><span class="num">04</span><h2>Awards</h2></div>
+    <ul class="awards">
+      <li><span><span class="aname">Epyllion Excellence Award</span><span class="anote">ERP implementation in garments cluster</span></span><span class="ayear">2020</span></li>
+      <li><span><span class="aname">Epyllion Excellence Award</span><span class="anote">Introduced new culture of dashboards</span></span><span class="ayear">2020</span></li>
+      <li><span><span class="aname">Epyllion Excellence Award</span><span class="anote">Impactful business contribution — honored as the youngest recipient</span></span><span class="ayear">2019</span></li>
+      <li><span><span class="aname">EPY START Award</span><span class="anote">Recognized for participation in Epyllion Group's annual Gala Night</span></span><span class="ayear">2017</span></li>
+    </ul>
+  </section>
+
+  <section id="training">
+    <div class="section-head"><span class="num">05</span><h2>Training conducted</h2></div>
+    <div class="training-grid">
+      <div class="card"><h3>Excel</h3><p>120+ sessions since 2015, training 2,500+ participants from basic to advanced skills.</p></div>
+      <div class="card"><h3>Business topics</h3><p>100+ sessions since 2014 on planning, communication, and digital transformation for 1,500+ trainees.</p></div>
+      <div class="card"><h3>ERP modules</h3><p>20 sessions since 2017, training 1,000+ people on ERP functionality.</p></div>
+      <div class="card"><h3>Business dashboards</h3><p>15 sessions since 2018, instructing 300+ on dashboard creation.</p></div>
+      <div class="card"><h3>PowerPoint</h3><p>15 sessions since 2016, training 150+ individuals in effective presentations.</p></div>
+      <div class="card"><h3>Pre &amp; post costing</h3><p>12 sessions since 2017, training 200+ on costing methods.</p></div>
+    </div>
+
+    <p style="margin-top:36px; font-size:0.95rem; color:var(--thread);">Completed 50+ additional training programs and certifications, including:</p>
+    <div class="cert-tags">
+      <span>Power BI</span><span>Tableau</span><span>Advanced Excel</span><span>AutoCAD basics</span>
+      <span>Artificial intelligence</span><span>Web analytics</span><span>Executive coaching</span>
+      <span>Leadership development</span><span>Project management</span><span>SCM</span>
+      <span>Strategic management</span><span>Big data analytics</span><span>Research methodology</span>
+      <span>Emotional intelligence</span><span>Creative AI</span><span>Video editing</span>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-head"><span class="num">06</span><h2>Education &amp; projects</h2></div>
+    <div class="two-col">
+      <div>
+        <h3 style="font-style:normal; font-size:1rem; font-family:'IBM Plex Sans'; font-weight:600; margin-bottom:14px;">Academic qualification</h3>
+        <div class="edu-item"><div class="deg">MBA, Management</div><div class="yr">Jagannath University, Dhaka — 2011</div></div>
+        <div class="edu-item"><div class="deg">BBS, Management</div><div class="yr">Jagannath University — 2007</div></div>
+
+        <h3 style="font-style:normal; font-size:1rem; font-family:'IBM Plex Sans'; font-weight:600; margin:26px 0 14px;">Language</h3>
+        <p style="font-size:0.95rem;">Fluent in Bengali, English &amp; Hindi.</p>
+      </div>
+      <div>
+        <h3 style="font-style:normal; font-size:1rem; font-family:'IBM Plex Sans'; font-weight:600; margin-bottom:14px;">Projects</h3>
+        <p style="font-size:0.95rem; margin-bottom:14px;"><strong>Garments ERP</strong> — Business domain architect for ERP software at Epyllion Group.</p>
+        <p style="font-size:0.95rem;"><strong>Garments &amp; textile ERP</strong> — Led implementation across order management, inventory, finance, planning, and shop floor modules.</p>
+
+        <h3 style="font-style:normal; font-size:1rem; font-family:'IBM Plex Sans'; font-weight:600; margin:26px 0 14px;">Beyond work</h3>
+        <p style="font-size:0.95rem;">Committee member, SOP / Policy &amp; Procedures at Epyllion Group. Lance Corporal, Bangladesh National Cadet Corps (BNCC).</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="wrap">
+  <h2>Let's talk business planning</h2>
+  <p style="max-width:55ch;">Open to conversations on ERP strategy, dashboard culture, and planning teams in the garment and textile industry.</p>
+  <div class="footer-links">
+    <a href="mailto:2johirul@gmail.com">Email</a>
+    <a href="https://linkedin.com/in/johirul-islam-bd/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="tel:+8801911105806">WhatsApp</a>
+  </div>
+  <p class="fine">Johirul Islam — Business Planning, Dhaka, Bangladesh</p>
+</footer>
+
+</body>
+</html>
